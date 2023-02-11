@@ -46,16 +46,16 @@ Zato se ne ustrucavajte da me kontaktirate koji god povod da je u pitanju, a ja 
   <div class="col-md-12 text-center">
     <div class="row">
         <div class="column">
-            <img src="img/vencanje1.jpg"  style="width:50%" hspace="50" vspace="50">
+            <img src="img/vencanje1.jpg"  style="width:100%">
         </div>
         <div class="column">
-            <img src="img/rodjendan1.jpg"  style="width:50%" hspace="200" vspace="50">
+            <img src="img/rodjendan1.jpg"  style="width:100%" >
         </div>
         <div class="column">
-            <img src="img/mini cake1.jpg"  style="width:50%" hspace="200" vspace="50">
+            <img src="img/mini cake1.jpg"  style="width:100%" >
         </div>
         <div class="column">
-            <img src="img/decije3.jpg"  style="width:50%" hspace="300" vspace="50">
+            <img src="img/decije3.jpg"  style="width:100%" >
         </div>
     </div>
 
