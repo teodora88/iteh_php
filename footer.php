@@ -16,6 +16,6 @@
 </body>
 </html>
 </ul>
-  All rights reserved, Torte i kolaci, 2023
+  All rights reserved, Torte za sve prilike, 2023
   </div>
 </footer>

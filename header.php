@@ -13,12 +13,12 @@
     <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slike.css">
-    <title>Kolaci</title>
+    <title>Torte</title>
 </head>
 <body>
  
     <nav class="navbar navbar-expand-lg border navbar-dark sticky-top bg-dark">
-        <a class="navbar-brand" href="index.php">Torte i kolaci</a>
+        <a class="navbar-brand" href="index.php">Torte za sve prilike</a>
         <div class="navbar-collapse collapse">
             <ul class="navbar-nav mx-auto">
                
