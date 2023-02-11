@@ -17,6 +17,31 @@ class Broker{
         return $broker;
     }
 
+    public function izmeni($upit){
+        $rezultat=$this->mysqli->query($upit);
+        $response=[];
+        $response['status']=(!$rezultat)?false:true;
+        if(!$rezultat){
+            $response['error']=$this->mysqli->error;
+        }
+        return $response;
+    }
+    public function vratiKolekciju($upit){
+        $rezultat=$this->mysqli->query($upit);
+        $response=[];
+        if(!$rezultat){
+            $response['status']=false;
+            $response['error']=$this->mysqli->error;
+        }
+        else{
+            $response['status']=true;
+            while($red=$rezultat->fetch_object()){
+                $response['kolekcija'][]=$red;
+            }
+        }
+        return $response;
+    }
+
 }
 
 ?>

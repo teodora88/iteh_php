@@ -4,6 +4,14 @@
     padding: 5px;
   }
 
+  .column {
+    flex: 25%;
+    padding: 5px;
+}
+
+.row {
+  display: flex;
+}
 
   .row::after {
 
@@ -11,15 +19,8 @@
     clear: both;
     display: table;
   }
-  .row {
-    display: flex;
 
-  }
-
-  .column {
-    flex: 25%;
-    padding: 5px;
-  }
+  
   @media screen and (max-width: 500px) {
     .column {
       width: 100%;
