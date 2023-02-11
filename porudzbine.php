@@ -14,7 +14,7 @@
             </select>
         </div>
         <div class="col-6">
-            <input onchange="render()" class="form-control" type="text" id="search" placeholder="search...">
+            <input onchange="render()" class="form-control" type="text" id="search" placeholder="pretrazi">
         </div>
         <div class="col-3">
             <select onchange="render()" class="form-control" id="kategorije">

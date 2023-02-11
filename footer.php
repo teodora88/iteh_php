@@ -1,7 +1,7 @@
 </body>
 <footer id="footer" class="footer">
   <div class="container text-center">
-  <h3>Pratite nas na drustvenim mrezama</h3>
+  <h3>Možete nas zapratiti i na društvenim mrežama</h3>
   <ul class="social-links">
   <!DOCTYPE html>
 <html>

@@ -11,6 +11,20 @@
 <div class='container'>
     <div class='row mt-2'>
         <div class='col-6'>
+            <h3 class="text-dark text-centar" id='naslov'>Kreiraj kategoriju</h3>
+            <form id='forma'>
+                <div class='form-group'>
+                    <label for="naziv">Naziv</label>
+                    <input required class="form-control" type="text" id="naziv">
+                </div>
+                <button class="btn btn-dark form-control" id="sacuvajK" type="submit">Sačuvaj</button>
+
+            </form>
+            <button id="vrati" hidden class="btn btn-secondary form-control mt-2" onclick="setIndex(-1)">Nazad
+            </button>
+        </div>
+
+        <div class='col-6'>
             <table class='table table-dark'>
                 <thead>
                     <tr>
@@ -27,19 +41,7 @@
 
 
         </div>
-        <div class='col-6'>
-            <h3 class="text-dark text-centar" id='naslov'>Kreiraj kategoriju</h3>
-            <form id='forma'>
-                <div class='form-group'>
-                    <label for="naziv">Naziv</label>
-                    <input required class="form-control" type="text" id="naziv">
-                </div>
-                <button class="btn btn-dark form-control" type="submit">Sačuvaj</button>
-
-            </form>
-            <button id="vrati" hidden class="btn btn-secondary form-control mt-2" onclick="setIndex(-1)">Nazad
-            </button>
-        </div>
+        
     </div>
 </div>
 

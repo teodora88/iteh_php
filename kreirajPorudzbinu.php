@@ -34,7 +34,7 @@
                     <label for="opis">Opis</label>
                     <textarea required name="opis" class="form-control" type="number" id="opis"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary form-control">Dodaj</button>
+                <button type="submit" class="btn btn-primary form-control" id="dodaj">Dodaj</button>
             </form>
         </div>
     </div>
@@ -97,7 +97,7 @@
             }
         })
     }
-    
+
 </script>
 <?php
     include 'footer.php';

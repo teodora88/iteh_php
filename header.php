@@ -13,7 +13,9 @@
     <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slike.css">
-    <title>Torte</title>
+    <title>Torte za sve prilike</title>
+    <link rel="icon" href="/img/favicon.ico">
+
 </head>
 <body>
  
