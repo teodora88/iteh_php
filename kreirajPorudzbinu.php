@@ -82,6 +82,22 @@
         })
     })
 
+    function ucitajOptions(url, htmlElement) {
+        $.getJSON(url).then(res => {
+            if (!res.status) {
+                alert(res.error);
+                return;
+            }
+            for (let element of res.kolekcija) {
+                $('#' + htmlElement).append(`
+                    <option value="${element.id}">
+                        ${element.naziv}
+                        </option>
+                `)
+            }
+        })
+    }
+    
 </script>
 <?php
     include 'footer.php';
