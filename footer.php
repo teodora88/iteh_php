@@ -1,6 +1,6 @@
 </body>
-<footer id="footer" class="footer">
-  <div class="container text-center">
+<footer id="footer" class="footer" style="background:#d4bfb9">
+  <div class="container text-center" >
   <h3>Možete nas zapratiti i na društvenim mrežama</h3>
   <ul class="social-links">
   <!DOCTYPE html>

@@ -1,11 +1,12 @@
 <?php
     include 'header.php';
 ?>
-
+<br>
 <div class='container mt-2'>
     <h1 class='text-center text-dark'>
         Kategorije mogućih torti
     </h1>
+    <br><br>
 </div>
 
 <div class='container'>
@@ -25,7 +26,7 @@
         </div>
 
         <div class='col-6'>
-            <table class='table table-dark'>
+            <table class='table table-light'>
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -139,6 +140,8 @@
         $('#vrati').attr('hidden', selIndex === -1)
     }
 </script>
+
+<br><br><br>
 <?php
     include 'footer.php';
 ?>

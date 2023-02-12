@@ -14,12 +14,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slike.css">
     <title>Torte za sve prilike</title>
-    <link rel="icon" href="/img/favicon.ico">
+    <link rel="icon" href="/img/logo2.jpg">
 
 </head>
 <body>
  
-    <nav class="navbar navbar-expand-lg border navbar-dark sticky-top bg-dark">
+    <nav class="navbar navbar-expand-lg border navbar-light sticky-top bg-light">
+    <img src="img/logo2.jpg" style="width:5%" class="img img-square">
         <a class="navbar-brand" href="index.php">Torte za sve prilike</a>
         <div class="navbar-collapse collapse">
             <ul class="navbar-nav mx-auto">

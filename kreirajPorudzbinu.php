@@ -1,6 +1,7 @@
 <?php
     include 'header.php';
 ?>
+<br>
 
 <div class='container mt-2 mb-5'>
     <h1 class='text-center text-dark'>
@@ -99,6 +100,9 @@
     }
 
 </script>
+
+<br><br><br>
+
 <?php
     include 'footer.php';
 ?> 

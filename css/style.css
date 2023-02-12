@@ -46,20 +46,20 @@ body {
   h6 {
     font-family: Open Sans, sans-serif;
     font-weight: 700;
-    color: #4b4b4c;
+    color: #4c4b4c;
   }
   a {
-    color: #df33df;
+    color: #eea5d0;
   }
   a:hover,
   a:focus {
-    color: #df33df !important;
+    color: #eea5d0 !important;
   }
   /***********************************
   Navigation bar
   ************************************/
   .navbar-default .navbar-brand {
-    color: #df33df;
+    color: #eea5d0;
   }
   .navbar-default {
     background-color: #ffffff;
@@ -68,7 +68,7 @@ body {
     padding: 84px;
   }
   .navbar-default .navbar-nav > li > a {
-    color: #717f86;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 700;
   }
@@ -79,7 +79,7 @@ body {
   }
   .navbar-default .navbar-nav > li > a:focus,
   .navbar-default .navbar-nav > li > a:hover {
-    color: #df33df;
+    color: #eea5d0;
   }
 
   .navbar-brand {
@@ -94,26 +94,26 @@ body {
 
   .navbar-nav .active a {
     background: none !important;
-    color: #df33df !important;
+    color: #eea5d0 !important;
     outline: none;
   }
 
   .btn-danger {
-    background-color: #df33df;
-    border-color: #df33df;
+    background-color: #eea5d0;
+    border-color: #eea5d0;
   }
 
   .btn-trial a {
-    background-color: #df33df;
+    background-color: #eea5d0;
     border-radius: 25px;
     color: #ffffff !important;
-    border: 1px solid #df33df;
+    border: 1px solid #eea5d0;
   }
   .btn-trial a:hover,
   .btn-trial a:focus {
-    border: 1px solid #df33df !important;
+    border: 1px solid #eea5d0 !important;
     background-color: #fff;
-    color: #df33df !important;
+    color: #eea5d0 !important;
   }
   .navbar-default .navbar-brand {
     font-family: "Dosis", sans-serif !important;
@@ -140,7 +140,7 @@ body {
   Banner
   ************************************/
   .banner {
-    background: url("../img/bg-banner.jpg") no-repeat center top;
+    background: url("../img/rodjendan1.jpg") no-repeat center top;
     background-size: cover;
     min-height: 580px;
     position: relative;
@@ -157,7 +157,7 @@ body {
     color: #fff;
   }
   .text-border {
-    border: 5px solid #df33df;
+    border: 5px solid #eea5d0;
     display: inline-block;
     margin-top: 150px;
   }
@@ -278,7 +278,7 @@ body {
     font-size: 16px;
   }
   .quote .btn {
-    background-color: #df33df;
+    background-color: #eea5d0;
     color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -288,7 +288,7 @@ body {
   .quote .btn:hover,
   .quote .btn:focus {
     background-color: #fff;
-    color: #df33df !important;
+    color: #eea5d0 !important;
     border-color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -317,7 +317,7 @@ body {
   }
   .fea i {
     font-size: 39px;
-    color: #df33df;
+    color: #eea5d0;
     margin-top: 7px;
   }
   .heading h4 {
@@ -338,7 +338,7 @@ body {
     background-color: rgb(247, 247, 247);
   }
   .orga-stru {
-    background-color: #df33df;
+    background-color: #eea5d0;
     width: 109px;
     height: auto;
     padding: 10px 10px 25px 10px;
@@ -371,7 +371,7 @@ body {
     text-transform: uppercase;
   }
   h4.sm-txt {
-    color: #df33df;
+    color: #eea5d0;
     font-size: 24px;
   }
   p.det-p {
@@ -398,7 +398,7 @@ body {
     font-size: 18px;
     text-transform: capitalize;
     color: #fff;
-    background-color: #df33df;
+    background-color: #eea5d0;
     border: 2px solid #fff;
     transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -417,7 +417,7 @@ body {
     min-width: 280px;
     margin-left: -4px;
     margin-bottom: 2px;
-    border: 1px solid #df33df;
+    border: 1px solid #eea5d0;
     background-color: rgb(247, 247, 247);
     border-radius: 30px 0px 0px 30px;
   }
@@ -425,7 +425,7 @@ body {
     font-size: 18px;
     text-transform: capitalize;
     color: #fff;
-    background-color: #df33df;
+    background-color: #eea5d0;
     border: 2px solid #fff;
     padding: 14px 30px;
     margin-left: -4px;
@@ -448,7 +448,7 @@ body {
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
   }
   .icon-box i {
-    color: #df33df;
+    color: #eea5d0;
     font-size: 65px;
   }
   .ser-text {
@@ -509,11 +509,11 @@ body {
   ************************************/
   [class*=" imghvr-"] figcaption,
   [class^="imghvr-"] figcaption {
-    background-color: #df33df;
+    background-color: #eea5d0;
   }
   [class*=" imghvr-"],
   [class^="imghvr-"] {
-    background-color: #df33df;
+    background-color: #eea5d0;
     color: #fff;
   }
   /***********************************
@@ -557,7 +557,7 @@ body {
     padding: 20px 0px;
     font-weight: bold !important;
     font-size: 14px;
-    background-color: #df33df;
+    background-color: #eea5d0;
   }
   /***********************************
   Contact Us
@@ -628,8 +628,8 @@ body {
   ************************************/
   .footer {
     padding: 60px 0 20px;
-    background: #111;
-    color: #ccc;
+    background: #d4bfb9;
+    color: #050404;
   }
   .footer a {
     color: #fff;
@@ -684,14 +684,14 @@ body {
 
   .btn-submit:hover,
   .btn-submit:focus {
-    background-color: #df33df !important;
+    background-color: #eea5d0 !important;
     color: #fff;
   }
   .btn-submit {
     padding: 14px 12px;
     border-radius: 50px;
     text-transform: uppercase;
-    background-color: #df33df;
+    background-color: #eea5d0;
     color: #fff;
   }
   .btn-submit i {
@@ -738,7 +738,7 @@ body {
     padding: 10px 20px;
   }
   .light-form-button {
-    background: #df33df;
+    background: #eea5d0;
     border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
     padding: 10px 10px;
@@ -753,7 +753,7 @@ body {
   }
   .btn-green,
   .btn-green:hover {
-    background-color: #df33df !important;
+    background-color: #eea5d0 !important;
     color: #fff;
   }
   .footer .form-control:focus {

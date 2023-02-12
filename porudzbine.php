@@ -2,10 +2,13 @@
     include 'header.php';
 ?>
 
+<br>
+
 <div class='container mt-2'>
     <h1 class='text-center text-dark'>
-        Torte za sve prilike
+        Porudzbine
         </h1>
+        <br><br>
     <div class="row mt-2">
         <div class="col-3">
             <select onchange="render()" class="form-control" id="sort">
@@ -17,7 +20,7 @@
             <input onchange="render()" class="form-control" type="text" id="search" placeholder="pretrazi">
         </div>
         <div class="col-3">
-            <select onchange="render()" class="form-control" id="kategorije">
+            <select onchange="render()" class="form-control" id="kategorija">
                 <option value="0">Sve kategorije</option>
             </select>
         </div>
@@ -29,18 +32,18 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-    let proizvodi = [];
-    let kategorije = [];
-    let boje = [];
+    let torta = [];
+    let kategorija = [];
+    let ukus = [];
     $(function () {
         $.getJSON('server/kategorija/read.php').then((res => {
             if (!res.status) {
                 alert(res.error);
                 return;
             }
-            kategorije = res.kolekcija;
-            for (let kat of kategorije) {
-                $('#kategorije').append(`
+            kategorija = res.kolekcija;
+            for (let kat of kategorija) {
+                $('#kategorija').append(`
                 <option value="${kat.id}"> ${kat.naziv}</option>
                 `)
             }
@@ -53,7 +56,7 @@
                 alert(res.error);
                 return;
             }
-            boje = res.kolekcija;
+            ukus = res.kolekcija;
 
         }))
         .then(ucitajProizvode)
@@ -66,7 +69,7 @@
                 alert(res.error);
                 return;
             }
-            proizvodi = res.kolekcija || [];
+            torta = res.kolekcija || [];
             render();
         }))
     }
@@ -74,8 +77,8 @@
     function render() {
         const search = $('#search').val();
         const sort = Number($('#sort').val());
-        const kat = Number($('#kategorije').val());
-        const niz = proizvodi.filter(element => {
+        const kat = Number($('#kategorija').val());
+        const niz = torta.filter(element => {
             return (kat == 0 || element.kategorija == kat) && element.naziv.includes(search)
         }).sort((a, b) => {
             return (a.cena > b.cena) ? sort : 0 - sort;
@@ -83,7 +86,7 @@
         let red = 0;
         let kolona = 0;
         $('#podaci').html(`<div id='row-${red}' class='row mt-2'></div>`)
-        for (let proizvod of niz) {
+        for (let torta of niz) {
             if (kolona === 4) {
                 kolona = 0;
                 red++;
@@ -93,17 +96,17 @@
                 `
                         <div class='col-3 pt-2 bg-white'>
                             <div class="card" >
-                                <img class="card-img-top" src="${proizvod.slika}" alt="Card image cap">
+                                <img class="card-img-top" src="${torta.slika}" alt="Card image cap">
                                 <div class="card-body">
-                                    <h6 class="card-title">Naziv: ${proizvod.naziv}</h6>
-                                    <h6 class="card-title">Cena: ${proizvod.cena}</h6>
-                                    <h6 class="card-title">Kategorija: ${kategorije.find(element => element.id === proizvod.kategorija).naziv}</h6>
-                                    <h6 class="card-title">Ukus: ${ukus.find(element => element.id === proizvod.ukus).naziv}</h6>
+                                    <h6 class="card-title">Naziv: ${torta.naziv}</h6>
+                                    <h6 class="card-title">Cena: ${torta.cena}</h6>
+                                    <h6 class="card-title">Kategorija: ${kategorija.find(element => element.id === torta.kategorija).naziv}</h6>
+                                    <h6 class="card-title">Ukus: ${ukus.find(element => element.id === torta.ukus).naziv}</h6>
                                    <b>Opis:</b>
-                                    <p class="card-text">${proizvod.opis}</p>
+                                    <p class="card-text">${torta.opis}</p>
                                 </div>
                                 <div class="card-footer ">
-                                    <button class='btn btn-danger form-control' onClick="obrisi(${proizvod.id})">Obrisi</button>
+                                    <button class='btn btn-danger form-control' onClick="obrisi(${torta.id})">Obrisi</button>
                                 </div>
                             </div>
                         </div>
@@ -122,11 +125,13 @@
                 return;
             }
 
-            proizvodi = proizvodi.filter(element => element.id != id);
+            torta = torta.filter(element => element.id != id);
             render();
         })
     }
 </script>
+
+<br><br><br><br><br><br><br><br><br>
 
 <?php
     include 'footer.php';
